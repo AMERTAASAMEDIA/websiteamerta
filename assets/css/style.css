@@ -572,6 +572,16 @@ section {
   padding-bottom: 15px;
 }
 
+.section-header h6 {
+  font-size: 20px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
 .section-header h4 {
   font-size: 32px;
   color: #111;
@@ -710,6 +720,46 @@ section {
     padding: 0; /* Menanggulangi padding pada kolom */
   }
 }
+
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .swiper {
+  padding: 50px 0; /* Adjusted padding to top and bottom only */
+  width: 100%;
+  align-items: center;
+  max-width: 1200px; /* Optional: Adjust based on your layout */
+}
+
+.clients .swiper-wrapper {
+  display: flex; /* Flex container to handle swiper slides */
+  align-items: center;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.clients .swiper-slide img {
+  max-width: 100%; /* Ensure the image fits within the slide */
+  height: auto; /* Maintain aspect ratio */
+  transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -910,6 +960,7 @@ section {
   z-index: 2;
 }
 
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
@@ -947,6 +998,231 @@ section {
   background: #7e0909;
   border: 2px solid #7e0909;
 }
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .testimonial-item {
+  background-color: #ffffff; /* Warna putih pada card testimonial */
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 0px 15px;
+  position: relative;
+  height: 100%;
+}
+
+.testimonials .testimonial-item .testimonial-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonials .testimonial-item .testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0;
+}
+
+.testimonials .testimonial-item .stars {
+  margin: 10px 0;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 15px auto 15px auto;
+}
+
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #7e0909; 
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .testimonials .testimonial-item .testimonial-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+.news .news-card {
+  background: #fff;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.news .news-card .img {
+  width: 100%;
+  height: 300px; /* Fixed height for images */
+  overflow: hidden;
+}
+
+.news .news-card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news .news-card .news-meta {
+  padding: 10px 20px;
+}
+
+.news .news-card .news-meta span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+  margin-right: 20px;
+}
+
+.news .news-card .news-meta i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.news .news-card h2 {
+  color: #000;
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.news .news-card h2 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.news .news-card h2 a:hover {
+  color: #7e0909;
+}
+
+.news .news-card p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}
+
+.news .swiper-wrapper {
+  height: auto;
+}
+
+.news .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.news .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #888;
+  opacity: 1;
+}
+
+.news .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #7e0909;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .news .news-card {
+    margin: 0 5px;
+  }
+
+  .news .news-card .img {
+    height: 200px; /* Adjust height for mobile */
+  }
+}
+
 
 /* Contact Section
 --------------------------------*/
