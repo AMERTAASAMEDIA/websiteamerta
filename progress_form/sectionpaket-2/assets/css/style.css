@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #cb0000;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #cb0000;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-header h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #cb0000;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: #f7f7f7;
+}
+
+/* Paket Section
+--------------------------------*/
+#paket {
+  background: #fff;
+  padding: 60px 0;
+}
+
+#paket .paket-item {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px; /* Tambahkan border-radius pada paket-item */
+}
+
+#paket .paket-item .paket-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px; /* Tambahkan border-radius pada gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow pada gambar */
+}
+
+#paket .paket-item .paket-info {
+  opacity: 0;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  border-radius: 10px; /* Tambahkan border-radius pada paket-info */
+}
+
+#paket .paket-item .paket-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#paket .paket-item:hover .paket-info {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+  border-radius: 10px; /* Tambahkan border-radius pada hover state */
+}
+
+#paket .paket-item:hover .paket-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#paket .paket-item h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#paket .paket-item span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#paket .pilih-paket {
+  display: inline-block;
+  width: calc(100% - 40px);
+  margin: 10px auto 0 auto;
+  text-align: center;
+  padding: 10px;
+}

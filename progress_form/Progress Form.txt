@@ -1,0 +1,13 @@
+Progress Form
+- Multi-step Form
+- Halaman Pertama Section Lokasi 
+- Halaman Pertama Section Paket
+
+Kurang :
+- Halaman Pertama Detail Paket
+- Halaman Kedua Section Data diri part 1
+- Halaman otp
+- Halaman Kedua Section Data diri part 2
+- Halaman Ketiga Section Instalasi
+- Halaman setelah submit
+- Menyatukan Section
