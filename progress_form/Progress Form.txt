@@ -1,12 +1,13 @@
 Progress Form
 - Multi-step Form dan halaman Pertama Section Lokasi 
-- Halaman Pertama Section Paket
+- Halaman Kedua Paket (namun belum disatukan)
+- Halaman Section Data diri part 1
+- Halaman Instalasi
 
 Kurang :
-- Halaman Pertama Detail Paket
-- Halaman Kedua Section Data diri part 1
+- Halaman Detail Paket
 - Halaman otp
 - Halaman Kedua Section Data diri part 2
-- Halaman Ketiga Section Instalasi
+- Belum diatur halaman yang tepat dengan multi-step
 - Halaman setelah submit
 - Menyatukan Section
