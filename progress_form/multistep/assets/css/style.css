@@ -157,7 +157,7 @@ p{
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url('/assets/img/1.svg');
+    background-image: url('../img/1.svg');
     background-size: cover;
     margin: 0 auto 10px auto;
 }
@@ -167,7 +167,7 @@ p{
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url('/assets/img/2.svg');
+    background-image: url('../img/2.svg');
     background-size: cover;
     margin: 0 auto 10px auto;
 }
@@ -177,7 +177,7 @@ p{
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url('/assets/img/3.svg');
+    background-image: url('../img/3.svg');
     background-size: cover;
     margin: 0 auto 10px auto;
 }
@@ -240,4 +240,116 @@ p{
     object-fit: cover
 }
 
+/* brosur image */
+.image-brosur {
+    display: grid; /* Menggunakan grid */
+    place-items: center; /* Menyelaraskan secara horizontal dan vertikal ke tengah */
+    height: 480px; /* Menentukan tinggi kontainer */
+    max-width: 150%; /* Membuat gambar menyesuaikan lebar kontainer */
+    margin-top: -60px;
+    margin-bottom: -20px;
+}
 
+.image-brosur img {
+    max-width: 100%; /* Membuat gambar menyesuaikan lebar kontainer */
+    height: auto; /* Memastikan aspek rasio gambar tetap */
+    max-height: 100%; /* Menentukan tinggi maksimum gambar */
+}
+
+.fs-aja {
+    margin-top: 80px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.fs-ajaa {
+    margin-top: 80px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.info-link {
+    color: red;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.location-texted {
+    color: grey;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+/* CSS untuk gambar pada langkah-step */
+.icon-step img {
+    max-width: 900px; /* Ubah sesuai dengan ukuran yang diinginkan */
+    display: block;
+   
+}
+
+/* section location */
+.location {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.location h1 {
+    font-size: 28px;
+    font-weight: bold; /* Membuat teks h1 menjadi tebal */
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyelaraskan konten secara horizontal di tengah */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+/* Individual spacing for text elements */
+
+   
+
+/* Additional spacing for other elements if needed */
+.icon-step img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 (9 / 16 * 100) */
+    height: 0; /* Mengatur tinggi 0 untuk menjaga rasio aspek */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
