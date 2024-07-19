@@ -43,16 +43,29 @@ p{
     display: none;
 }
 
-#msform input, #msform textarea{
-    padding: 8px 15px 8px 15px;
+/* Style untuk elemen <p> dengan kelas paragraf-1 */
+.paragraf-1 {
+    text-align: left; /* Menyelaraskan teks ke kiri */
+    font-size: 18px; /* Menentukan ukuran font */
+    color: #333; /* Warna teks */
+    margin-bottom: 10px; /* Spasi di bawah paragraf */
+    font-weight: bold; /* Menjadikan teks tebal */
+}
+
+/* Mengatur lebar dan padding pada kolom vertikal */
+.col-vertical {
+    width: 100%; /* Membuat kolom mengambil lebar penuh kontainer */
+    margin-bottom: 15px; /* Spasi antara kolom */
+}
+
+
+/* Mengatur padding dan border pada input dan textarea */
+#msform input, #msform textarea {
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
+    border-radius: 8px;
+    width: 100%; /* Lebar penuh dari kontainer */
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    color: #2C3E50;
     background-color: #ECEFF1;
     font-size: 16px;
     letter-spacing: 1px;
@@ -99,6 +112,39 @@ p{
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
     background-color: #000000
+}
+
+/* Ensure the parent container uses flexbox and stacks items vertically */
+.row-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-vertical {
+    width: 100%; /* Ensure each column takes the full width of the parent */
+   
+}
+
+#msform input, #msform textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Full width of the parent container */
+    box-sizing: border-box;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    display: none; /* Hide feedback messages by default */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+.is-invalid + .invalid-feedback {
+    display: block; /* Show feedback message if the field is invalid */
 }
 
 .card {
@@ -162,7 +208,7 @@ p{
     margin: 0 auto 10px auto;
 }
 
-#progressbar #personal:before {
+#progressbar #paket:before {
     content: "";
     display: block;
     width: 50px;
@@ -172,7 +218,7 @@ p{
     margin: 0 auto 10px auto;
 }
 
-#progressbar #payment:before {
+#progressbar #personal:before {
     content: "";
     display: block;
     width: 50px;
@@ -183,8 +229,13 @@ p{
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/4.svg');
+    background-size: cover;
+    margin: 0 auto 10px auto;
 }
 
 #progressbar li:before {
@@ -352,4 +403,77 @@ p{
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    display: none; /* Sembunyikan pesan peringatan secara default */
+}
+
+.is-invalid + .invalid-feedback {
+    display: block; /* Tampilkan pesan peringatan jika field memiliki kelas is-invalid */
+}
+
+/* Style untuk form-group */
+.form-group {
+    margin-bottom: 20px; /* Jarak antara input */
+    text-align: left; /* Menyelaraskan label ke kiri */
+}
+
+.form-group label {
+    display: block; /* Menampilkan label sebagai blok untuk jarak yang lebih baik */
+    font-size: 16px; /* Ukuran font untuk label */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+    color: #333; /* Warna teks untuk label */
+}
+
+#msform input, #msform textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Lebar penuh dari kontainer */
+    box-sizing: border-box;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    display: none; /* Sembunyikan pesan peringatan secara default */
+}
+
+.is-invalid + .invalid-feedback {
+    display: block; /* Tampilkan pesan peringatan jika field memiliki kelas is-invalid */
+}
+
+.next, .previous {
+    margin-top: 20px; /* Jarak antara tombol dan elemen sebelumnya */
+}
+
+.action-button, .action-button-previous {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-button {
+    background-color: #7e0909;
+    color: #fff;
+}
+
+.action-button-previous {
+    background-color: #616161;
+    color: #fff;
+}
+
+.action-button:hover {
+    background-color: #5c0707;
+}
+
+.action-button-previous:hover {
+    background-color: #4a4a4a;
 }

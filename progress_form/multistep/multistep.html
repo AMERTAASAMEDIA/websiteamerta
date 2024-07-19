@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daftar Amerta Asa Media</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
@@ -24,9 +21,9 @@
                     <!-- progressbar -->
                     <ul id="progressbar" class="col-12">
                         <li class="active" id="location"><strong>Pilih Lokasi & Paket</strong></li>
+                        <li id="paket"><strong>Pilih Paket</strong></li>
                         <li id="personal"><strong>Isi Data Diri</strong></li>
-                        <li id="payment"><strong>Instalasi</strong></li>
-                        <li id="confirm"><strong>Selesai</strong></li>
+                        <li id="confirm"><strong>Instalasi</strong></li>
                     </ul>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -46,18 +43,16 @@
                             <div class="row">
                                 <div class="col-12 centered-content">
                                     <div class="image-brosur">
-                                        <img src="./assets/img/banner.png">
+                                        <img src="./assets/img/banner.png" alt="Banner">
                                     </div>
                                     <h2 class="fs-aja">Pasang Jaringan Amerta Dirumahmu</h2>
                                     <p><a href="#" class="info-link">Klik untuk info lebih lanjut</a></p>
                                     <p class="location-text">Segera pilih Lokasi untuk paket wifi pilihanmu</p>
                                 </div>
                                 <div class="icon-step">
-                                    <img src="./assets/img/processpaket.png">
+                                    <img src="./assets/img/processpaket.png" alt="Process Paket">
                                 </div>
-                                <br>
-                                <br>
-                                <br>
+                                <br><br><br>
                                 <div class="col-12 centered-content">
                                     <h2 class="fs-ajaa">Mulailah berlangganan di Amerta</h2>
                                     <p class="location-text">Segera pilih lokasi anda dan nikmati layanan kami</p>
@@ -66,14 +61,26 @@
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18101.46010975652!2d112.73976047699425!3d-7.7647520395808955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d36c311b6833%3A0x1e65d6af19201219!2sPT.%20Amerta%20Asa%20Media!5e0!3m2!1sen!2sid!4v1721289762757!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Paket Pilihan:</h2>
+                            <br>
+                        <br>
+                            <!-- Added form fields -->
+                            <div class="row-vertical">
+                                <div class="col-vertical">
+                                    <p class="paragraf-1"> Masukkan Kota Alamat </p>
+                                    <input type="text" name="city" placeholder="Masukkan nama kota/kabupaten, gedung, dkk" required />
+                                    <div class="invalid-feedback">Nama kota/kabupaten harus diisi.</div>
                                 </div>
-                                <div class="col-5"></div>
+                                <div class="col-vertical">
+                                    <p class="paragraf-1"> Masukkan Alamat Lengkap</p>
+                                    <textarea name="full_address" placeholder="Masukkan alamat lengkap desa/kelurahan,RT/RW,dll" rows="6" required></textarea>
+                                    <div class="invalid-feedback">Alamat lengkap harus diisi.</div>
+                                </div>
                             </div>
-                        </div> <input type="button" name="next" class="next action-button" value="Next" />
+                                                   
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" />
                     </fieldset>
+
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
@@ -83,9 +90,42 @@
                                 <div class="col-5">
                                     <h2 class="steps">Step 2 - 4</h2>
                                 </div>
-                            </div> 
-                        </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            </div>
+                            <!-- Add your input fields here -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="name">Nama Lengkap</label>
+                                        <input type="text" id="name" name="name" placeholder="Nama Lengkap" required />
+                                        <div class="invalid-feedback">Nama Lengkap harus diisi.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="id_number">Nomor KTP</label>
+                                        <input type="text" id="id_number" name="id_number" placeholder="Nomor KTP" required />
+                                        <div class="invalid-feedback">Nomor KTP harus diisi.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Alamat</label>
+                                        <input type="text" id="address" name="address" placeholder="Alamat" required />
+                                        <div class="invalid-feedback">Alamat harus diisi.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Nomor Telepon</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon" required />
+                                        <div class="invalid-feedback">Nomor Telepon harus diisi.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email (harus berupa @gmail.com)</label>
+                                        <input type="email" id="email" name="email" placeholder="Email" required />
+                                        <div class="invalid-feedback">Email harus berupa @gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
+                    
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
@@ -95,8 +135,16 @@
                                 <div class="col-5">
                                     <h2 class="steps">Step 3 - 4</h2>
                                 </div>
-                            </div> 
-                        </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            </div>
+                            <!-- Add your input fields here -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="date" name="installation_date" required />
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Submit" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -107,14 +155,19 @@
                                 <div class="col-5">
                                     <h2 class="steps">Step 4 - 4</h2>
                                 </div>
-                            </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>TERKIRIM!</strong></h2> <br>
+                            </div>
+                            <br><br>
+                            <h2 class="purple-text text-center"><strong>TERKIRIM!</strong></h2>
+                            <br>
                             <div class="row justify-content-center">
-                                <div class="col-3"> <img src="/belum diisi" class="fit-image"> </div>
-                            </div> <br><br>
+                                <div class="col-3">
+                                    <img src="your_image_path_here" class="fit-image" alt="Thank You">
+                                </div>
+                            </div>
+                            <br><br>
                             <div class="row justify-content-center">
                                 <div class="col-7 text-center">
-                                    <h5 class="purple-text text-center">Kamu telah mendaftar sebagai Pelanggan Amerta Asa Media<br> Pemasangan WiFi akan dilakukan pada tanggal yang telah ditentukan.</h5>
+                                    <h5 class="purple-text text-center">Kamu telah mendaftar sebagai Pelanggan Amerta Asa Media<br>Pemasangan WiFi akan dilakukan pada tanggal yang telah ditentukan.</h5>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +177,7 @@
         </div>
     </div>
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./assets/js/script.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
