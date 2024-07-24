@@ -4,18 +4,21 @@
     font-family: "Open Sans", sans-serif;
 }
 
-html{
+html, body {
     height: 100%;
+    background-color: #eff6ff; /* light blue background */
 }
 
 p{
     color: grey;
+    background: #eff6ff;
 }
 
-#heading{
+#heading {
     text-transform: uppercase;
     color: #7e0909;
     font-weight: bolder;
+    background: #eff6ff;
 }
 
 #msform{
@@ -24,8 +27,8 @@ p{
     margin-top: 20px;
 }
 
-#msform fieldset{
-    background: white;
+#msform fieldset {
+    background: #eff6ff;
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -35,8 +38,9 @@ p{
     position: relative;
 }
 
-.form-card{
+.form-card {
     text-align: center;
+    background-color: #eff6ff; /* light blue background for the form card */
 }
 
 #msform fieldset:not(:first-of-type){
@@ -61,11 +65,15 @@ p{
 
 /* Mengatur padding dan border pada input dan textarea */
 #msform input, #msform textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 100%; /* Lebar penuh dari kontainer */
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #2C3E50;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #2C3E50;
     background-color: #ECEFF1;
     font-size: 16px;
     letter-spacing: 1px;
@@ -131,7 +139,7 @@ p{
     border-radius: 8px;
     width: 100%; /* Full width of the parent container */
     box-sizing: border-box;
-    background-color: #ECEFF1;
+    background-color: #eff6ff;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -150,7 +158,8 @@ p{
 .card {
     z-index: 0;
     border: none;
-    position: relative
+    position: relative;
+    background: #eff6ff; /* ensure card background is also light blue */
 }
 
 .fs-title {
@@ -291,7 +300,6 @@ p{
     object-fit: cover
 }
 
-/* brosur image */
 .image-brosur {
     display: grid; /* Menggunakan grid */
     place-items: center; /* Menyelaraskan secara horizontal dan vertikal ke tengah */
@@ -299,12 +307,15 @@ p{
     max-width: 150%; /* Membuat gambar menyesuaikan lebar kontainer */
     margin-top: -60px;
     margin-bottom: -20px;
+    border-radius: 40px; /* Menambahkan border-radius */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melebihi border-radius */
 }
 
 .image-brosur img {
     max-width: 100%; /* Membuat gambar menyesuaikan lebar kontainer */
     height: auto; /* Memastikan aspek rasio gambar tetap */
     max-height: 100%; /* Menentukan tinggi maksimum gambar */
+    border-radius: 40px; /* Menambahkan border-radius pada gambar */
 }
 
 .fs-aja {
@@ -477,3 +488,67 @@ p{
 .action-button-previous:hover {
     background-color: #4a4a4a;
 }
+
+/* CSS KU */
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .photo-container {
+    padding: 10px;
+  }
+  
+  .photo-container img {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+
+/* Add a more prominent border to the specific fieldset */
+
+.form-card-baru {
+    text-align: center;
+    background-color: #f9f9f9; /* light blue background for the form card */
+}
+
+.blue-border-fieldset {
+   
+    border-radius: 10px;     /* Optional: Rounded corners */
+    padding: 20px;          /* Optional: Padding inside the border */
+    background-color: #f9f9f9; /* Optional: Background color inside the border */
+    margin-bottom: 20px;    /* Optional: Margin below the fieldset */
+    box-shadow: 0 8px 8px rgba(0, 0, 255, 0.2); /* Optional: Subtle shadow for added emphasis */
+}
+
+.blue-border-fieldset .form-card {
+    padding: 15px; /* Adjust as needed */
+}
+
+.image-info img {
+    border-radius: 15px; /* Mengatur melengkungnya tepian gambar */
+    width: 100%;
+    height: auto;
+}
+
+.form-check-inline {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 100px; /* Jarak antar pilihan */
+}
+
+.form-check-input {
+    margin-right: 10px; /* Jarak antara checkbox dan label */
+}
+
+.image-warn img {
+    border-radius: 15px; /* Mengatur melengkungnya tepian gambar */
+    width: 100%;
+    height: auto;
+}
+
