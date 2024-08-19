@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Amerta Asa Media</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light shadow-sm">
+        <a class="navbar-brand back-link" href="step2.html">
+            <i class="fas fa-arrow-left back-icon" aria-hidden="true"></i>
+        </a>
+        <span class="navbar-text mx-auto font-weight-bold">
+           Data Diri
+        </span>
+        <span></span> <!-- Empty span to balance the flex space -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    
+                    <form id="msform" action="step4.html" method="GET">
+                        <!-- progressbar -->
+                        <ul id="progressbar" class="col-12">
+                            <li id="location" class="active"><strong>Pilih Lokasi</strong></li>
+                            <li id="paket" class="active"><strong>Pilih Paket</strong></li>
+                            <li id="personal" class="active"><strong>Isi Data Diri</strong></li>
+                            <li id="confirm"><strong>Instalasi</strong></li>
+                        </ul>
+                        
+                        <br>
+                       
+                        <fieldset id="step4">
+                            <div class="image-info">
+                                <img src="./assets/img/datadiri.png" alt="Data Image">
+                            </div>
+                            <br>
+                            <div class="blue-border-fieldset">
+                                <div class="form-card-baru">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <!-- <h2 class="fs-title">Data Diri Pelanggan:</h2> -->
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Step 3 - 4</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="ktp_image">Unggah Foto KTP <span class="required">*</span></label>
+                                                <input type="file" id="ktp_image" name="ktp_image" required />
+                                                <div class="invalid-feedback">Foto KTP harus diunggah.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_number">Nomor KTP (NIK) <span class="required">*</span></label>
+                                                <input type="text" id="id_number" name="id_number" placeholder="Nomor KTP" required pattern="\d{16}" title="Nomor KTP harus terdiri dari 16 digit angka" />
+                                                <div class="invalid-feedback">Nomor KTP harus diisi dan terdiri dari 16 digit angka.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name">Nama Lengkap (sesuai KK) <span class="required">*</span></label>
+                                                <input type="text" id="name" name="name" placeholder="Nama Lengkap" required />
+                                                <div class="invalid-feedback">Nama Lengkap harus diisi.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="gender">Jenis Kelamin <span class="required">*</span></label>
+                                                <div class="form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                                    <label class="form-check-label" for="radio1"> Wanita </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                                                    <label class="form-check-label" for="radio2">Pria</label>
+                                                </div>
+                                                <div class="invalid-feedback">Jenis Kelamin harus dipilih.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="birth_place">Tempat Lahir (sesuai KK) <span class="required">*</span></label>
+                                                <input type="text" id="birth_place" name="birth_place" placeholder="Tempat Lahir" required />
+                                                <div class="invalid-feedback">Tempat Lahir harus diisi.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="birth_date">Tanggal Lahir (sesuai KK) <span class="required">*</span></label>
+                                                <input type="date" id="birth_date" name="birth_date" required />
+                                                <div class="invalid-feedback">Tanggal Lahir harus diisi.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="address">Alamat (sesuai KK) <span class="required">*</span></label>
+                                                <input type="text" id="address" name="address" placeholder="Alamat" required />
+                                                <div class="invalid-feedback">Alamat harus diisi.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email <span class="required">*</span></label>
+                                                <input type="email" id="email" name="email" placeholder="Email" required pattern=".+@gmail\.com" />
+                                                <div class="invalid-feedback">Email harus diisi dan berupa @gmail.com</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Nomor Telepon <span class="required">*</span></label>
+                                                <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon" required pattern="\d{10,13}" title="Nomor Telepon harus terdiri dari 10-13 digit angka" />
+                                                <div class="invalid-feedback">Nomor Telepon harus diisi dan terdiri dari 10-13 digit angka.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" onclick="window.location.href='step2.html';" />   
+                                <input type="submit" name="next" class="next action-button" value="Next" />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -551,4 +551,386 @@ p{
     width: 100%;
     height: auto;
 }
+.required {
+    color: red;
+}
 
+
+/* detailpaket */
+
+ 
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom styling */
+.header h1 {
+    font-weight: 600; /* Ensuring boldness matches */
+}
+
+.header p, .price p, .detail-section p {
+    font-weight: 400;
+}
+
+
+/* Styling for the button */
+.detail-section-b .btn {
+    font-weight: 700;               /* Menetapkan ketebalan font */
+    background-color: #7e0909;      /* Warna latar belakang button */
+    color: white;                   /* Warna teks button */
+    border: none;                   /* Menghapus border default */
+    border-radius: 0px;             /* Radius sudut button (ubah sesuai kebutuhan) */
+    padding: 5px 20px;             /* Padding untuk ukuran button */
+    text-transform: uppercase;      /* Mengubah teks menjadi huruf kapital */
+    font-size: 16px;                /* Ukuran font button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+}
+
+.detail-section-b .btn:hover {
+    background-color: #a53030;      /* Warna latar belakang saat hover */
+    color: #fff;                    /* Warna teks saat hover */
+}
+
+
+/* Styling for icons */
+.detail-section .fa {
+    font-size: 24px; /* Adjust icon size */
+    color: #808080; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+    padding-top: 10px; /* Adjust icon position */
+}
+
+/* Styling for paragraphs */
+.detail-section p {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Styling for price */
+.price p {
+    font-weight: bold; /* Make text bold */
+    font-size: 18px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+    background-color: transparent; /* Ensure no background color */
+}
+
+/* Styling for text section */
+.text-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to left */
+    justify-content: center; /* Center text vertically */
+}
+
+.text-section h1 {
+    margin: 0; /* Remove margin */
+    font-size: 28px; /* Adjust font size */
+    font-weight: 600; /* Make text bold */
+}
+
+.text-section p {
+    margin: 0; /* Remove margin */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    background-color: white;
+}
+
+/* Styling for total text */
+.total-text {
+    margin-left: 10px; /* Space from left */
+    font-weight: bold; /* Make text bold */
+    font-size: 50px; /* Adjust font size */
+}
+.detail-section p {
+    background-color: white;
+}
+
+.detail-section-b .total-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.detail-section-b .btn-danger {
+    background-color: #7e0909;
+    border-color: #7e0909;
+    font-size: 1.2rem;
+    padding: 10px 15px; /* Atur padding jika perlu */
+    width: 540px; /* Sesuaikan lebar tombol */
+    text-align: center; /* Pastikan teks tombol terletak di tengah */
+    margin-right: 15px; /* Space from left */
+}
+
+.detail-section-b .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+/* Tambahkan gaya untuk tombol dengan sudut melengkung */
+.btn-danger {
+   
+    padding: 10px 10px; /* Sesuaikan padding jika diperlukan */
+}
+
+
+/* Anda bisa menambahkan gaya tambahan jika diperlukan */
+.total-text {
+    font-size: 18px; /* Sesuaikan ukuran font jika diperlukan */
+}
+/* Styling untuk tautan Previous */
+.previous {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #555; /* Warna teks default */
+    padding: 10px 20px; /* Mengatur padding untuk meningkatkan area klik */
+    border-radius: 4px; /* Memberikan border-radius untuk sudut melengkung */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi efek latar belakang dan warna teks */
+}
+
+.previous:hover {
+    background-color: #cecbcb !important; /* Warna latar belakang saat hover (abu-abu muda) */
+    color: #333 !important; /* Warna teks saat hover */
+}
+
+/* step4 */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.required-asterisk {
+    color: red;
+    margin-left: 5px;
+}
+
+.schedule-title {
+    white-space: nowrap;
+    font-size: 30px; /* Adjust the size as needed */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px; /* Adjust the size as needed */
+    font-weight: 500;
+}
+
+.form-control {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+    -webkit-appearance: none; /* untuk Chrome, Safari, dan Edge */
+    -moz-appearance: none;    /* untuk Firefox */
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+input[type="text"] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b4cdce;
+}
+/* Gaya untuk elemen form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk input tanggal */
+input[type="date"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Gaya untuk tombol */
+.action-button-previous,
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Gaya untuk notifikasi */
+.notification {
+    display: none;
+    background-color: #f44336; /* Warna latar belakang merah untuk notifikasi error */
+    color: white; /* Warna teks putih */
+    padding: 10px;
+    margin-bottom: 10px; /* Jarak di bawah notifikasi */
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Posisi absolut untuk menempatkan notifikasi di atas tombol */
+    top: -60px; /* Jarak dari atas, sesuaikan sesuai kebutuhan */
+}
+
+.pengganti-body {
+    background-color: #eff6ff !important; /* Use !important if necessary to ensure it overrides other styles */
+}
+
+/* detail1 */
+.total-textbt {
+    margin-top: 10px; /* Space from top (adjust as needed) */
+    margin-left: 20px; /* Space from left */
+    font-weight: bold; /* Make text bold */
+    font-size: 20px; /* Adjust font size */
+  
+}
+.detail-sectionbt p {
+    background-color: white;
+}
+.detail-section-bt{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.detail-section-b .btn-danger {
+    background-color: #7e0909;
+    border-color: #7e0909;
+    font-size: 1.3rem;
+    font-weight: bold; /* Make text bold */
+    width: 580px; /* Sesuaikan lebar tombol */
+    text-align: center; /* Pastikan teks tombol terletak di tengah */
+    padding-left: 10px;
+}
+.detail-section-bt .btn {
+    font-weight: 600;               /* Menetapkan ketebalan font */
+    background-color: #7e0909;      /* Warna latar belakang button */
+    color: white;                   /* Warna teks button */
+    border: none;                   /* Menghapus border default */
+    border-radius: 0px;             /* Radius sudut button (ubah sesuai kebutuhan) */
+    padding: 10px 15px;             /* Padding untuk ukuran button */
+    text-transform: uppercase;      /* Mengubah teks menjadi huruf kapital */
+    /* font-size: 18px;                Ukuran font button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+    margin-right: 15px; /* Space from left */
+}
+
+.detail-section-bt .btn:hover {
+    background-color: #a53030;      /* Warna latar belakang saat hover */
+    color: #fff;                    /* Warna teks saat hover */
+}
+.detail-section-bt .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+/* button
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+} */ 
+/* .hidden {
+    display: none;
+} */
+
+
+/* Mengatur gambar berada di tengah dan mengatur ukurannya */
+.image-ilustrasi {
+    display: flex;
+    justify-content: center;
+}
+
+.image-ilustrasi img {
+    margin-top: 20px;
+    max-width: 50%; /* Ukuran maksimal gambar, sesuaikan sesuai kebutuhan */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+/* Tambahkan padding pada step-card untuk memberikan jarak antara konten dan tepi card */
+
+
+/* Jika Anda ingin menambahkan jarak khusus antara gambar dan teks dalam step-card */
+.step-card p {
+    margin-top: 10px; /* Atur jarak sesuai keinginan */
+}
+.step-card {
+   
+    padding: 20px; /* Jarak antara border dan konten teks */
+    border-radius: 15px; /* Menambahkan sudut melengkung pada border */
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan untuk kontras */
+    margin: 20px 0; /* Jarak antara kartu dengan elemen lain */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan pada kartu */
+
+}
+
+
+.required-asterisk {
+    color: red;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.schedule-title {
+    white-space: nowrap;
+}
+
+h2#heading {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    white-space: nowrap; /* Memastikan teks tidak membungkus */
+    font-weight: 600; /* Mengatur ketebalan teks, bisa disesuaikan */
+    font-size: 30px; /* Ukuran font, bisa disesuaikan */
+}
+
+h2.fs-aja {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    white-space: nowrap; /* Memastikan teks tidak membungkus */
+    font-weight: 600; /* Mengatur ketebalan teks, bisa disesuaikan */
+    font-size: 25px; /* Ukuran font, bisa disesuaikan */
+    text-align: center; /* Memastikan teks berada di tengah */
+}
+
+.action-button {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

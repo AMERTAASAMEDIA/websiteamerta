@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Amerta Asa Media</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2 id="heading">Pasang Wi-Fi di Amerta Asa Media</h2>
+
+                    <p>Isi seluruh form untuk lanjut ke step berikutnya</p>
+                    <form id="msform" action="step2.html" method="GET">
+                        <!-- progressbar -->
+                        <ul id="progressbar" class="col-12">
+                            <li class="active" id="location"><strong>Pilih Lokasi</strong></li>
+                            <li id="paket"><strong>Pilih Paket</strong></li>
+                            <li id="personal"><strong>Isi Data Diri</strong></li>
+                            <li id="confirm"><strong>Instalasi</strong></li>
+                        </ul>
+                        
+                        <br>
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title"></h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 1 - 4</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 centered-content">
+                                        <div class="image-brosur">
+                                            <img src="./assets/img/banner promosi.png" alt="Banner">
+                                        </div>
+                                        <h2 class="fs-aja">Pasang Jaringan Amerta Dirumahmu</h2>
+                                        <p><a href="./info-lebihlanjut.html" class="info-link">Klik untuk info lebih lanjut</a></p>
+                                        <p class="location-text">Segera pilih Lokasi untuk paket wifi pilihanmu</p>
+                                    </div>
+                                    <div class="icon-step">
+                                        <img src="./assets/img/processpaket.png" alt="Process Paket">
+                                    </div>
+                                    <br><br><br>
+                                    <div class="col-12 centered-content">
+                                        <h2 class="fs-ajaa">Mulailah berlangganan di Amerta</h2>
+                                        <p class="location-text">Segera pilih lokasi anda dan nikmati layanan kami</p>
+                                    </div>
+                                    <div class="map-container">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18101.46010975652!2d112.73976047699425!3d-7.7647520395808955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d36c311b6833%3A0x1e65d6af19201219!2sPT.%20Amerta%20Asa%20Media!5e0!3m2!1sen!2sid!4v1721289762757!5m2!1sen!2sid"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <!-- Added form fields -->
+                                <div class="row-vertical">
+                                    <div class="col-vertical">
+                                        <p class="paragraf-1">Masukkan Kota/Kabupaten Tempat Tinggal Anda</p>
+                                        <input type="text" name="city" placeholder="Masukkan nama kota/kabupaten"
+                                            required />
+                                        <div class="invalid-feedback">Nama kota/kabupaten harus diisi.</div>
+                                    </div>
+                                    <div class="col-vertical">
+                                        <p class="paragraf-1">Masukkan Alamat Lengkap Anda</p>
+                                        <textarea name="full_address"
+                                            placeholder="Masukkan alamat lengkap seperti kecamatan, desa/kelurahan, RT/RW, Nama Jalan, dll"
+                                            rows="6" required></textarea>
+                                        <div class="invalid-feedback">Alamat lengkap harus diisi.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <style>
+        
+    </style>
+</body>
+
+</html>
